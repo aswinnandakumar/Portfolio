@@ -246,15 +246,118 @@
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
+                padding: 10px 15px;
+            }
+            nav h1 {
+                font-size: 1.2rem;
+                margin-bottom: 8px;
             }
             nav ul {
-                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 0;
+                gap: 8px 12px;
+            }
+            nav ul li {
+                margin: 0 4px;
+            }
+            nav ul li a {
+                font-size: 0.85rem;
+                padding: 4px 8px;
+            }
+            section {
+                padding: 60px 15px;
+            }
+            #home {
+                padding: 60px 15px;
             }
             #home h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
+            }
+            #home p {
+                font-size: 1rem;
             }
             .about-content {
                 flex-direction: column;
+            }
+            .about-photo {
+                flex: 0 0 auto;
+                margin-bottom: 1rem;
+            }
+            .about-photo img {
+                width: 120px;
+                height: 150px;
+            }
+            .about-text p {
+                font-size: 0.95rem;
+            }
+            .skills {
+                gap: 8px;
+            }
+            .skill-tag {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+            #about h2, #experience h2, #projects h2, #contact h2, #publications h2, #conferences h2, #education h2, #certifications h2 {
+                font-size: 1.5rem;
+            }
+            .timeline {
+                padding: 0 5px;
+            }
+            .timeline-item {
+                padding: 15px;
+            }
+            .timeline-item h3 {
+                font-size: 1.1rem;
+            }
+            .timeline-item p {
+                font-size: 0.9rem;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .project-card .project-image {
+                height: 150px;
+            }
+            .project-card .project-info {
+                padding: 15px;
+            }
+            .project-card h3 {
+                font-size: 1.1rem;
+            }
+            .project-card p {
+                font-size: 0.9rem;
+            }
+            .certifications-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .btn {
+                padding: 10px 24px;
+                font-size: 0.9rem;
+            }
+            footer {
+                padding: 15px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            nav ul li a {
+                font-size: 0.75rem;
+                padding: 3px 6px;
+            }
+            #home h1 {
+                font-size: 1.5rem;
+            }
+            #home p {
+                font-size: 0.9rem;
+            }
+            .about-photo img {
+                width: 100px;
+                height: 130px;
             }
         }
     </style>
@@ -343,6 +446,7 @@
             </div>
             <div class="project-card">
                 <div class="project-image">🛡️</div>
+
                 <div class="project-info">
                     <h3>Autoit Malicious Script Analysis</h3>
                     <p>Engineered and deployed AutoIT-based malicious scripts with 90% success rate in bypassing system defenses. Used Social Engineering Toolkit for email spoofing and phishing simulations.</p>
